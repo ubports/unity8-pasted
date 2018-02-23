@@ -1,0 +1,19 @@
+Source: unity8-pasted
+Section: X11
+Priority: optional
+Build-Depends: cmake (>= 2.8.10),
+               debhelper (>= 9),
+               qtdeclarative5-dev,
+               pkg-config,
+               libx11-dev,
+               libcontent-hub-dev (>= 0.2),
+               libdbustest1-dev (>= 14.04.0)
+Maintainer: Marius Gripsgard <marius@ubports.com>
+Standards-Version: 3.9.5
+Homepage: https://github.com/ubports/unity8-pasted
+
+Package: unity8-pasted
+Architecture: armhf arm64 i386 amd64
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Description: Copy & Paste daemon between X apps, other X apps, and native apps
